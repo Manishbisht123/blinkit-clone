@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+::placeholder {
+    color: #ccc;
+    padding-left: 10px;
+}
+
+header {
+    width: 100%;
+    height: 86px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    background-color: #fff;
+    position: relative;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    left: 0;
+    top: 0;
+}
+
+.navbar .sticky {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+.navbar .logo {
+    height: 30px;
+}
+
+.navbar .logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.vertical-line {
+    width: 1px;
+    border-right: 1px solid rgb(238, 238, 238);
+    height: 50px;
+    margin: 0 20px;
+}
+
+.nav-content h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 18px;
+    margin-left: 50px;
+    word-spacing: 1px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.nav-content a {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 50px;
+    word-spacing: 1px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.nav-content i {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.search-box {
+    display: inline-block;
+    height: 45px;
+    width: 450px;
+    border: 1px solid rgb(235, 234, 234);
+    border-radius: 10px;
+    outline: none;
+    margin: 0 40px;
+    background-color: #f9f9f9;
+}
+
+.search-box i {
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.search-box input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    width: 400px;
+    height: 44px;
+}
+
+.account {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.account a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+    transition: font-size 0.5s ease 0s;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: rgb(12, 131, 31);
+    border-radius: 8px;
+    cursor: pointer;
+    height: 52px;
+    width: 112px;
+    gap: 5px;
+    margin-left: 80px;
+}
+
+.button i {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.button a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* banner section */
+
+.brand {
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* card section */
+
+.card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 10px;
+    padding: 0 10px;
+    margin-top: 15px;
+}
+
+.cards img {
+    height: 180px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+/* products section */
+
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-auto-rows: minmax(120px, auto);
+    grid-gap: 10px;
+    margin-top: 10px;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+
+.product img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* popup login section */
+
+.popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.614);
+    display: none;
+}
+
+.popup-container {
+    background-color: white;
+    border-radius: 12px;
+    margin: 7% auto;
+    height: 380px;
+    border: 1px solid #888888;
+    width: 550px;
+    text-align: center;
+}
+
+.popup-container button {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #ccc;
+    margin-top: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    color: #fff;
+}
+
+.popup-container button:hover {
+    background-color: #0c831f;
+    color: #fff;
+}
+
+.show {
+    display: block;
+}
+
+.popup-container p {
+    color: #333;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 4;
+    text-align: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.popup-text h3 {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 30px;
+    color: #333;
+}
+
+.search-input {
+    display: inline-block;
+    height: 40px;
+    width: 300px;
+    border: 1px solid rgb(235, 234, 234);
+    border-radius: 10px;
+    outline: none;
+    margin: 10px 40px;
+    background-color: #f9f9f9;
+}
+
+.search-input i {
+    font-size: 15px;
+}
+
+.search-input input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    width: 250px;
+    height: 35px;
+}
+
+.popup-text h6 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+    margin-top: 10px;
+}
+
+.popup-text .policy {
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.popup-text .terms {
+    font-size: 13px;
+    color: rgb(12, 131, 31);
+    text-decoration: underline;
+}
+
+.popup-text .privacy {
+    font-size: 13px;
+    color: #0c831f;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+
+/* popup location section */
+
+.location-popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.514);
+    display: none;
+}
+
+.location-container {
+    background-color: white;
+    border-radius: 0;
+    margin: 7% 8%;
+    height: 115px;
+    border: 1px solid #888888;
+    width: 500px;
+    float: left;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.location-container p {
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333;
+    margin-top: 5px;
+    padding: 10px 20px;
+}
+
+.location-container .close {
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    margin: 10px 0;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.location-box {
+    padding: 0px 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.location-box button {
+    display: block;
+    height: 36px;
+    width: 120px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #0c831f;
+    display: flex;
+    outline: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.location-box button:hover {
+    background-color: #3a9a1d;
+    color: #fff;
+}
+
+.location-box span {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 6px 0;
+    color: #ccc;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    padding: 2px 0 3px 3px;
+    border: 1px solid #ccc;
+}
+
+.location-box input {
+    height: 35px;
+    width: 250px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: Arial;
+    letter-spacing: 1px;
+}
+
+.show {
+    display: block;
+}
+
+/* 
+product 3 section */
+
+.card-meal {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.card-meal span {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 30px 5px;
+}
+
+.meal-section{
+    display: flex;
+    margin: auto;
+}
+
+.meal-content {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 240px;
+    margin: 20px 4px;
+}
+
+.meal-content img {
+    margin: 0px 30px;
+}
+
+
+.card-content .meal-text {
+    text-align: center;
+}
+
+.meal-text h2 {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 10px;
+    color: #333;
+}
+
+.meal-text h3{
+    font-size: 13px;
+    font-weight: 400;
+    color: #ccc;
+    margin: 30px 0px 10px 10px;
+}
+
+.meal-button{
+    display: flex;
+    gap: 70px;
+}
+
+.meal-button h4{
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+    margin: 0 10px;
+}
+
+.meal-button button{
+    cursor: pointer;
+    width: 66px;
+    border: 1px solid rgb(49, 134, 22);
+    height: 31px;
+    color: rgb(49, 134, 22);
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: -60px;
+    border-radius: 6px;
+}
+
+
+/* copyright section */
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    height: 20vh;
+    border-top: 1px solid #ccc;
+}
+
+.copyright a{
+    font-size: 16px;
+    color: #333;
+}

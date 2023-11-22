@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkIt Clone</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <!-- header section start -->
+
+    <header class="header">
+        <nav class="navbar sticky" id="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./img/blink-it.svg"></a>
+            </div>
+
+            <div class="vertical-line"></div>
+            <div class="nav-content">
+                <h3 id="TimeUp">Delivery in 10 minutes</h3>
+                <a id="locationPop">Dehradun, Uttrakhand <i class="fa-solid fa-caret-down"></i></a>
+            </div>
+
+            <div class="search-box">
+                <i class="ri-search-line" id="button"></i>
+                <input type="search" value placeholder="Search 'Bread' " id="search">
+            </div>
+
+            <div class="account">
+                <a href="#login" id="login">Login</a>
+            </div>
+
+            <div class="button">
+                <i class="fa-solid fa-cart-shopping" height="60"></i>
+                <a href="#cart"> My Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- login popup section start -->
+
+    <div id="myPopup" class="popup">
+        <div class="popup-container">
+            <p>Phone Number Verification</p>
+            <div class="popup-text">
+                <h3>Enter your phone number to <br>
+                    Login/Sign up</h3>
+                <div class="search-input">
+                    <i class="ri-smartphone-line"></i>
+                    <input type="text" type="number" placeholder=" +91- " required>
+                </div>
+                <button id="closePopup" class="button">Next</button>
+                <h6>By continuing, you agree to our</h6>
+                <div class="policy">
+                    <a href="index.html" class="terms">Terms of service</a>
+                    <a href="index.html" class="privacy">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- location popup section start -->
+
+    <div id="locationPopup" class="location-popup">
+        <div class="location-container">
+            <span class="close" id="closeBtn">&times;</span>
+            <p>Change Location</p>
+            <div class="location-box">
+                <button>Detect my location</button>
+                <span>OR</span>
+                <input type="text" type="text" placeholder="search delivary location">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- banner section start -->
+
+    <section class="brand">
+        <div class="banner">
+            <a href="index.html"><img src="./img/banner.jpg"></a>
+        </div>
+    </section>
+
+
+    <!-- cards section start -->
+    <div class="card">
+        <div class="cards">
+            <img src="./img/card1.jpg">
+        </div>
+        <div class="cards">
+            <img src="./img/card2.jpg">
+        </div>
+        <div class="cards">
+            <img src="./img/card3.jpg">
+        </div>
+        <div class="cards">
+            <img src="./img/card4.jpg">
+        </div>
+    </div>
+
+
+    <!-- products section start -->
+
+    <section class="products">
+        <div class="product">
+            <img src="./img/products/pro1.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro2.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro3.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro4.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro5.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro6.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro7.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro8.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro9.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro11.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro12.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro13.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro14.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro15.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro16.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro17.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro18.jpg">
+        </div>
+
+        <div class="product">
+            <img src="./img/products/pro19.jpg">
+        </div>
+    </section>
+
+
+    <!-- product 3 section start -->
+
+    <div class="card-meal" id="card-meal">
+        <span>Dairy, Bread & Eggs</span>
+        <div class="meal-section">
+            <div class="meal-content">
+                <img src="./img/meal/meal1.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Verka Paneer</h2>
+                    <h3>200 g</h3>
+                    <div class="meal-button">
+                        <h4>₹80</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <img src="./img/meal/meal2.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Bonn High Fibre Brown Bread</h2>
+                    <h3>380 g</h3>
+                    <div class="meal-button">
+                        <h4>₹140</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <img src="./img/meal/meal3.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Nestle Milkmaid Milk</h2>
+                    <h3>300 g</h3>
+                    <div class="meal-button">
+                        <h4>₹80</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <img src="./img/meal/meal4.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Amul Blend Cheese</h2>
+                    <h3>500 ml</h3>
+                    <div class="meal-button">
+                        <h4>₹120</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <img src="./img/meal/meal5.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Verka Milk</h2>
+                    <h3>500 g</h3>
+                    <div class="meal-button">
+                        <h4>₹30</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <img src="./img/meal/meal6.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Amul Butter</h2>
+                    <h3>200 g</h3>
+                    <div class="meal-button">
+                        <h4>₹280</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+       <!-- product 4 section start -->
+
+       <div class="card-meal" id="card-meal">
+        <span>Snacks & Munchies</span>
+        <div class="meal-section">
+            <div class="meal-content">
+                <img src="./img/meal/snacks/snack1.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Haldiram's Punjabi Tadka</h2>
+                    <h3>200 g</h3>
+                    <div class="meal-button">
+                        <h4>₹52</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <img src="./img/meal/snacks/snack2.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Haldiram's Classic Peanut</h2>
+                    <h3>220 g</h3>
+                    <div class="meal-button">
+                        <h4>₹52</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <img src="./img/meal/snacks/snack3.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Lay's Masala Chip</h2>
+                    <h3>50 g</h3>
+                    <div class="meal-button">
+                        <h4>₹30</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <img src="./img/meal/snacks/snack4.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Haldiram's Plain Bhujia</h2>
+                    <h3>230 g</h3>
+                    <div class="meal-button">
+                        <h4>₹80</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <img src="./img/meal/snacks/snack5.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Act Golden Popcorn</h2>
+                    <h3>20 g</h3>
+                    <div class="meal-button">
+                        <h4>₹10</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <img src="./img/meal/snacks/snack6.jpg" height="110">
+                <div class="meal-text">
+                    <h2>Uncle Chipps Spicy</h2>
+                    <h3>50 g</h3>
+                    <div class="meal-button">
+                        <h4>₹20</h4>
+                        <button>Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <a href="index.html">© Blink Commerce Private Limited (formerly known as Grofers India Private Limited), 2016-2023</a>
+    </div>
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
